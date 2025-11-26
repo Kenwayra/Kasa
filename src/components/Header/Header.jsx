@@ -1,14 +1,22 @@
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
+import './Header.css'
+import LOGO from '../../assets/LOGO.png'
 
 function Header() {
     return (
-        <>
-        <p>This is a header.</p>
-        <nav>
-            <Link to="/home">Home</Link>
-            <Link to="/about">About</Link>
+        <div className='header'>
+        <img className='kasa-logo' src={LOGO} alt='Kasa logo'/>
+        <nav className='nav-items'>
+            <NavLink to="/home" 
+            className={({isActive}) => isActive ? 'nav-active' : ''}
+            >
+            Accueil</NavLink>
+            <NavLink to="/about"
+            className={({isActive}) => isActive ? 'nav-active' : ''}
+            >
+            À Propos</NavLink>
         </nav>
-        </>
+        </div>
     )
 }
 
