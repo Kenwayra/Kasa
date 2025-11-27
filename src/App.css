@@ -2,7 +2,10 @@
 
 
 body {
-  margin: 4vh 5vw;
   font-family: 'Montserrat', sans-serif;
   font-size: 2vh;
+}
+
+.page-container {
+  margin: 0 5vw;
 }

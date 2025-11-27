@@ -8,11 +8,13 @@ import Footer from './components/Footer/Footer.jsx'
 function App() {
   return (
     <>
-      <Header/>
-      <Routes>
-        <Route path='/home' element={<Test />} />
-        <Route path='/about' element={<About />} />
-      </Routes>
+      <div className='page-container'>
+        <Header/>
+        <Routes>
+          <Route path='/home' element={<Test />} />
+          <Route path='/about' element={<About />} />
+        </Routes>
+      </div>
       <Footer/>
     </>
   )

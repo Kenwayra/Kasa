@@ -5,7 +5,7 @@ import LOGO from '../../assets/LOGO.png'
 function Header() {
     return (
         <div className='header'>
-        <img className='kasa-logo' src={LOGO} alt='Kasa logo'/>
+        <img className='header-logo' src={LOGO} alt='Kasa logo'/>
         <nav className='nav-items'>
             <NavLink to="/home" 
             className={({isActive}) => isActive ? 'nav-active' : ''}
