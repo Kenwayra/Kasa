@@ -1,0 +1,94 @@
+.housing-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.housing-title h5 {
+padding-top: 2vh;
+padding-bottom: 1vh;
+font-size: 3vh;
+font-weight: 500;
+color: #FF6060;
+}
+
+.housing-title p {
+  font-weight: 500;
+}
+
+.housing-host {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.housing-host p {
+  padding: 2vh;
+  font-weight: 400;
+  color: #FF6060;
+}
+
+.host-icon {
+  position: relative;
+  height: 7vh;
+  width: 7vh;
+  overflow: hidden;
+  border-radius: 100%;
+  z-index: 0;
+}
+
+.host-picture {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.tags-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.tag-item {
+  padding: 3px 20px;
+  margin-right: 2vh;
+  margin-bottom: 2vh;
+  color: white;
+  font-weight: 500;
+  background-color: #FF6060;
+  border-radius: 10px;
+}
+
+.fa-star {
+  font-size: 2.5vh;
+}
+
+.filled {
+  color: #FF6060;
+}
+
+.empty {
+  color: #E3E3E3;
+}
+
+.housing-summary {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2vh 0;
+}
+
+.housing-description {
+  margin-bottom: 5vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10vh;
+}
+
+.housing-dropdown {
+  margin: 0;
+  flex: 1;
+}

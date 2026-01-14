@@ -1,5 +1,5 @@
 .dropdown-wrapper {
-    margin: 5vh 0;
+    margin: 4vh 0;
 }
 
 .dropdown {
@@ -22,7 +22,7 @@
 }
 
 .dropdown-text {
-    background-color: #F6F6F6;
+    background-color: #F6F6F680;
     border-radius: 7px;
     padding: 4vh;
 }

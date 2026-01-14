@@ -5,7 +5,7 @@ import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
-function Dropdown({title, content}) {
+function Dropdown({title, content, className}) {
    const [isOpen, setIsOpen] = useState(false)
 
    function handleClick() {
@@ -17,7 +17,7 @@ function Dropdown({title, content}) {
    }, [isOpen])
 
    return (
-      <div className='dropdown-wrapper'>
+      <div className={`dropdown-wrapper ${className || ""}`}>
          <button className="dropdown" onClick={handleClick}>
             {title} 
             <FontAwesomeIcon icon={isOpen ? faAngleDown : faAngleUp} />

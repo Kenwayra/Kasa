@@ -1,0 +1,59 @@
+.carousel {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 60vh;
+    width: 100%;
+    border-radius: 5vh;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.carousel-img {
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+button {
+    position: relative;
+    background-color: transparent;
+    color: white;
+    font-size: 10vh;
+    border: none;
+    z-index: 1;
+}
+
+.counter {
+    position: relative;
+    z-index: 1;
+    align-self: end;
+    padding-bottom: 3vh;
+    color: white;
+}
+
+.carousel::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+    linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0) 10%
+    ),
+    linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0) 10%
+    ),
+    linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0) 20%
+    );
+}
